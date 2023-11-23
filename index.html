@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <div class="left">
+        <form id="form">
+          <input type="text" name="name" placeholder="Employee Name" required />
+
+          <input type="number" name="salary" placeholder="Salary" required />
+          <input type="text" name="team" placeholder="Team" required />
+          <select name="role">
+            <option value="SDE">SDE</option>
+            <option value="SA">Software Tester</option>
+            <option value="PM">Project Manager</option>
+          </select>
+          <input
+            type="text"
+            name="companyName"
+            placeholder="Company Name"
+            required
+          />
+          <button>Create Employee</button>
+        </form>
+      </div>
+      <div class="right">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Salary</th>
+              <th>Role</th>
+              <th>Team</th>
+              <th>Company Name</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody id="records-container"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
